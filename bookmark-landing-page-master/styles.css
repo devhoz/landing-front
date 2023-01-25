@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+:root {
+  /* PRIMARY */
+  --Soft-blue:#5368df;
+  --soft-red:	#fa5757;
+  /* NEUTRAL */
+  --Grayish-blue:	#9194a1;
+  --Very-dark-blue:#252b46;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.wrapper {
+  padding: 3rem 5rem;
+}
+.wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  top: 0;
+  height: 40px;
+  align-items: center;
+}
+.wrapper .header .header-right-sect ul a {
+  text-decoration: none;
+  color: black;
+  padding-left: 3rem;
+}
+.wrapper .header .header-right-sect ul a:hover {
+  color: var(--soft-red);
+}
+.wrapper .header .header-right-sect ul li {
+  display: inline;
+}
+.wrapper .hero {
+  padding-top: 5rem;
+  display: flex;
+  margin-bottom: 4rem;
+}
+.wrapper .hero .hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+}
+.wrapper .hero .hero-left .hero-heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--Very-dark-blue);
+}
+.wrapper .hero .hero-left .hero-text {
+  line-height: 25px;
+  margin-bottom: 1.5rem;
+  color: var(--Grayish-blue);
+}
+.wrapper .hero .hero-left .button {
+  background-color: transparent;
+  padding: 0.8rem 1.2rem;
+  color: var(--Very-dark-blue);
+  border-radius: 5px;
+  margin-right: 8px;
+  border: 1px var(--Very-dark-blue) solid;
+}
+.wrapper .hero .hero-left .button:hover {
+  background-color: transparent;
+  color: var(--Soft-blue);
+  border-radius: 5px;
+  margin-right: 8px;
+  border: 2px var(--Soft-blue) solid;
+  cursor: pointer;
+}
+.wrapper .hero .hero-right {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.wrapper .hero-bottom {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.wrapper .hero-bottom .hero-left-bottom {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+}
+.wrapper .hero-bottom .hero-right-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+}
+.wrapper .hero-bottom .hero-heading-bottom {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--Very-dark-blue);
+}
+.wrapper .hero-bottom .hero-text-bottom {
+  margin-bottom: 1.5rem;
+  line-height: 25px;
+  font-size: 18px;
+  color: var(--Grayish-blue);
+}
+.wrapper .hero-bottom .download-button-bottom {
+  background-color: var(--Soft-blue);
+  padding: 0.8rem 1.2rem;
+  color: white;
+  border-radius: 5px;
+  margin-right: 8px;
+  border: none;
+}
+
+.hero-sub-sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.hero-sub-sect .sub-heading-hero {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+.hero-sub-sect .sub-para-hero {
+  text-align: center;
+  line-height: 25px;
+  color: var(--Grayish-blue);
+  font-size: 18px;
+}
+
+.hero-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  font-size: 18px;
+}
+.hero-divider div {
+  border-bottom: 1px var(--Grayish-blue) solid;
+  padding-bottom: 2rem;
+}
+.hero-divider div:hover:nth-child(1) {
+  border-bottom: 4px var(--soft-red) solid;
+}
+.hero-divider div:hover:nth-child(3) {
+  color: var(--soft-red);
+}
+.hero-divider a {
+  padding: 0 2rem;
+  text-decoration: none;
+  color: var(--Grayish-blue);
+  font-size: 18px;
+}
+.hero-divider .divider {
+  border-bottom: 1px var(--Very-dark-blue) solid;
+  width: 60%;
+  height: auto;
+}

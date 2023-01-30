@@ -28,10 +28,16 @@ body {
   top: 0;
   align-items: center;
 }
+.wrapper .header .header-left-sect img {
+  cursor: pointer;
+}
+.wrapper .header .header-right-sect ul {
+  padding: 1.5rem;
+}
 .wrapper .header .header-right-sect ul a {
   text-decoration: none;
   color: black;
-  padding: 1.5rem 1.5rem;
+  padding: 0rem 1.5rem;
 }
 .wrapper .header .header-right-sect ul a:hover {
   color: var(--soft-red);
@@ -47,6 +53,12 @@ body {
   color: white;
   border-radius: 5px;
 }
+.wrapper .header .header-right-sect .login:hover {
+  background-color: var(--soft-red);
+  padding: 0.5rem 2rem;
+  color: white;
+  border-radius: 5px;
+}
 .wrapper .hero {
   margin-top: 12rem;
   display: flex;
@@ -56,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 60%;
+  max-width: 50%;
   flex-grow: 1;
   padding: 0 0 7rem 5rem;
 }
@@ -72,6 +84,7 @@ body {
 }
 .wrapper .hero .hero-left .button {
   background-color: var(--Soft-blue);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 2px;
   padding: 0.8rem 1.2rem;
   color: white;
   border-radius: 5px;
@@ -79,7 +92,8 @@ body {
   border: none;
 }
 .wrapper .hero .hero-left .firefox-button {
-  background-color: lightgray;
+  background-color: #f7f7f7;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 2px;
   padding: 0.8rem 1.2rem;
   color: var(--Very-dark-blue);
   border-radius: 5px;
@@ -94,23 +108,25 @@ body {
   margin-right: 8px;
   cursor: pointer;
 }
-.wrapper .hero .hero-right- {
-  max-width: 60%;
+.wrapper .hero .hero-right {
+  max-width: 50%;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  margin-left: 107px;
 }
-.wrapper .hero .hero-right- .image-background {
+.wrapper .hero .hero-right .image-background {
   background-color: var(--Soft-blue);
   position: relative;
   height: 400px;
-  width: 100%;
-  border-bottom-left-radius: 200px;
+  width: 80%;
+  border-bottom-left-radius: 180px;
+  margin-left: 120px;
 }
-.wrapper .hero .hero-right- .image-background .hero-right-image {
+.wrapper .hero .hero-right .image-background .hero-right-image {
   position: absolute;
-  right: 85px;
-  bottom: 50px;
+  right: 60px;
+  bottom: 25px;
 }
 .wrapper .hero-bottom {
   display: flex;
@@ -178,13 +194,19 @@ body {
   justify-content: center;
   margin-bottom: 4rem;
   font-size: 18px;
+  border-bottom: 1px thin var(--Grayish-blue);
+  padding: 2rem;
 }
-.hero-divider n a {
-  padding: 0 2rem;
+.hero-divider a {
   text-decoration: none;
   color: var(--Grayish-blue);
   font-size: 18px;
   padding: 2rem;
+  border-bottom: 1px solid var(--Grayish-blue);
+}
+.hero-divider .border-bottom {
+  border-bottom: 4px solid var(--soft-red);
+  color: var(--Very-dark-blue);
 }
 .hero-divider .divider {
   border-bottom: 1px var(--Very-dark-blue) solid;
@@ -221,7 +243,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 8px;
   box-shadow: 0 -6px 0 #fff, 0 1px 6px rgba(0, 0, 0, 0.15);
   margin-bottom: 4rem;
 }
@@ -287,26 +309,31 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.faq .que-last {
-  margin-bottom: 2rem;
+.faq .faq-questions .questions {
+  margin: 0;
+  padding: 1rem 1rem 1rem 0;
+}
+.faq .faq-questions .que-last {
+  border-bottom: 1px solid var(--Grayish-blue);
 }
 .faq .faq-button {
   background-color: var(--Soft-blue);
   padding: 0.8rem 1.2rem;
   color: white;
   border-radius: 5px;
-  margin-right: 8px;
   border: none;
+  margin-top: 3rem;
 }
 
 .newsletter {
-  padding: 3rem;
+  padding: 5rem 0;
   background-color: var(--Soft-blue);
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 8rem;
 }
 .newsletter .newsletter-top {
   font-size: 12px;
@@ -315,9 +342,10 @@ body {
 .newsletter .news-heading {
   font-size: 1.2rem;
   margin: 2rem 0;
+  letter-spacing: 2px;
 }
 .newsletter input {
-  padding: 0.75rem 4rem 0.75rem 1rem;
+  padding: 14px 110px 14px 12px;
   border-radius: 5px;
   border: none;
 }
@@ -333,7 +361,7 @@ body {
 .newsletter .contact-us-button {
   background-color: var(--soft-red);
   color: white;
-  padding: 0.8rem 1.5rem;
+  padding: 14px 1.5rem;
   border: none;
   border-radius: 5px;
   font-size: 12px;

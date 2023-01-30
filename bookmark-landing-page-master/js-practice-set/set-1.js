@@ -26,6 +26,7 @@ console.log(c)
 
 c['Percentage']= "89.6%";
 c['ClassTeacher']="ChintaMani"
+c['FathersName']="Tiwari G";
 console.log(c)
 // *******We can add values to the objects using object refrence, Whereas Object refrence such as "c" in this case cannot be re-degfined with the same name. Refrence can only be use to add or modify Values inside.********
 
@@ -38,7 +39,14 @@ const dictionary={
     Path:"A defined way of achieving some task",
 } 
 
+dictionary['Extact']="To sort some material from it's original instance";
+dictionary['Fundamemtals']="Basics of any given process";
+// To insert values inside the created object.
+
 console.log (dictionary.Path)
 console.log(dictionary['Hello'])
+console.log(dictionary)
 // ****** Value in object can be accessed with both syntaxt mentioned******
+
+     
 
